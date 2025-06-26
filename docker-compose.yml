@@ -1,0 +1,8 @@
+services:
+  scraper:
+    build: .
+    volumes:
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python scraper.py "${RACE_URL:-https://nar.netkeiba.com/race/result.html?race_id=202542062612}"
