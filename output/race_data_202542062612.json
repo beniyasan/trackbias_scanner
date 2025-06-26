@@ -1,0 +1,155 @@
+{
+  "race_url": "https://nar.netkeiba.com/race/result.html?race_id=202542062612",
+  "race_id": "202542062612",
+  "race_type": "nar",
+  "race_info": {
+    "race_name": "武甲山特別(B2B3)",
+    "distance": "ダ2000m",
+    "race_class": "サラ系一般 B2B3",
+    "race_number": "12",
+    "race_date": "2025/06/26",
+    "venue": "浦和"
+  },
+  "horses": [
+    {
+      "rank": "1",
+      "frame": "5",
+      "horse_number": "5",
+      "horse_name": "リョウタスペシャル",
+      "time": "2:06.4",
+      "last_3f": "38.5"
+    },
+    {
+      "rank": "2",
+      "frame": "4",
+      "horse_number": "4",
+      "horse_name": "ロックフレイバー",
+      "time": "2:06.5",
+      "last_3f": "37.8"
+    },
+    {
+      "rank": "3",
+      "frame": "1",
+      "horse_number": "1",
+      "horse_name": "リュウノアン",
+      "time": "2:07.0",
+      "last_3f": "38.7"
+    },
+    {
+      "rank": "4",
+      "frame": "7",
+      "horse_number": "10",
+      "horse_name": "ロイヤルザップ",
+      "time": "2:07.3",
+      "last_3f": "38.5"
+    },
+    {
+      "rank": "5",
+      "frame": "7",
+      "horse_number": "9",
+      "horse_name": "プリンスオーソ",
+      "time": "2:07.7",
+      "last_3f": "38.7"
+    },
+    {
+      "rank": "6",
+      "frame": "5",
+      "horse_number": "6",
+      "horse_name": "モズハッピーロード",
+      "time": "2:07.9",
+      "last_3f": "39.2"
+    },
+    {
+      "rank": "7",
+      "frame": "2",
+      "horse_number": "2",
+      "horse_name": "ライコウノヒカリ",
+      "time": "2:08.6",
+      "last_3f": "39.9"
+    },
+    {
+      "rank": "8",
+      "frame": "8",
+      "horse_number": "11",
+      "horse_name": "フォートウィリアム",
+      "time": "2:08.8",
+      "last_3f": "39.2"
+    },
+    {
+      "rank": "9",
+      "frame": "6",
+      "horse_number": "8",
+      "horse_name": "アルバスドラコ",
+      "time": "2:08.9",
+      "last_3f": "40.1"
+    },
+    {
+      "rank": "10",
+      "frame": "8",
+      "horse_number": "12",
+      "horse_name": "エイシンシュトルム",
+      "time": "2:09.3",
+      "last_3f": "41.2"
+    },
+    {
+      "rank": "11",
+      "frame": "6",
+      "horse_number": "7",
+      "horse_name": "ダイバオーソ",
+      "time": "2:09.3",
+      "last_3f": "40.6"
+    },
+    {
+      "rank": "12",
+      "frame": "3",
+      "horse_number": "3",
+      "horse_name": "ライパチ",
+      "time": "2:11.1",
+      "last_3f": "42.8"
+    }
+  ],
+  "corner_passing_order": {
+    "corner_1": "3,5,12,7,8,1,2,6,4,9,10,11",
+    "corner_2": "3,5,12,1,7,8,6,2,4,10,9,11",
+    "corner_3": "5,12,4,1,10,6,9,3,7,8,2,11",
+    "corner_4": "5,4,1,10,6,12,9,8,7,11,2,3"
+  },
+  "lap_times": {
+    "distances": [
+      "200m",
+      "400m",
+      "600m",
+      "800m",
+      "1000m",
+      "1200m",
+      "1400m",
+      "1600m",
+      "1800m",
+      "2000m"
+    ],
+    "cumulative_times": [
+      "12.3",
+      "23.5",
+      "36.1",
+      "48.7",
+      "1:01.5",
+      "1:14.5",
+      "1:27.9",
+      "1:40.2",
+      "1:53.7",
+      "2:06.4"
+    ],
+    "interval_times": [
+      "12.3",
+      "11.2",
+      "12.6",
+      "12.6",
+      "12.8",
+      "13.0",
+      "13.4",
+      "12.3",
+      "13.5",
+      "12.7"
+    ]
+  }
+}

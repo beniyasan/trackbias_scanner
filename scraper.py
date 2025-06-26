@@ -123,14 +123,20 @@ async def extract_race_info(page, race_type: str) -> Dict[str, Any]:
             if race_num_match:
                 race_info["race_number"] = race_num_match.group(1)
         
-        # Extract date from page title (YYYY年MM月DD日 format)
+        # Extract date and venue from page title (YYYY年MM月DD日 format)
         title_elem = await page.query_selector('title')
         if title_elem:
             title_text = (await title_elem.inner_text()).strip()
+            # Extract date
             date_match = re.search(r'(\d{4})年(\d{1,2})月(\d{1,2})日', title_text)
             if date_match:
                 year, month, day = date_match.groups()
                 race_info["race_date"] = f"{year}/{month.zfill(2)}/{day.zfill(2)}"
+            
+            # Extract venue (競馬場名) from title format: "レース名 結果・払戻 | YYYY年MM月DD日 競馬場名NR 地方競馬レース情報"
+            venue_match = re.search(r'\d{4}年\d{1,2}月\d{1,2}日\s+(\S+?)\d+R', title_text)
+            if venue_match:
+                race_info["venue"] = venue_match.group(1)
         
         # Fallback: try to extract from page title
         if not race_info.get("race_name"):
