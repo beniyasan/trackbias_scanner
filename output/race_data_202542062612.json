@@ -5,10 +5,11 @@
   "race_info": {
     "race_name": "武甲山特別(B2B3)",
     "distance": "ダ2000m",
+    "surface_condition": "重",
     "race_class": "サラ系一般 B2B3",
     "race_number": "12",
     "race_date": "2025/06/26",
-    "venue": "浦和"
+    "venue": "浦和競馬場"
   },
   "horses": [
     {

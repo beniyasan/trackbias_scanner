@@ -13,8 +13,10 @@ Netkeiba（競馬サイト）からレース結果データを取得するPython
 - レース名
 - レース番号
 - 開催日 (YYYY/MM/DD形式)
+- 競馬場名（フルネーム：浦和→浦和競馬場）
 - 距離
-- 馬場状態
+- 馬場状態（トラック状態）
+- 馬場状態（表面状態）
 - クラス
 
 ### 各馬の情報
@@ -70,8 +72,10 @@ chmod +x run.sh
     "race_name": "甲武信ヶ岳特別",
     "race_number": "11",
     "race_date": "2025/06/26",
+    "venue": "浦和競馬場",
     "distance": "ダ1500m",
     "track_condition": "重",
+    "surface_condition": "重",
     "race_class": "サラ系一般 A2"
   },
   "horses": [

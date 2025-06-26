@@ -1,0 +1,166 @@
+{
+  "race_url": "https://race.netkeiba.com/race/result.html?race_id=202509030611",
+  "race_id": "202509030611",
+  "race_type": "jra",
+  "race_info": {
+    "race_name": "しらさぎS",
+    "distance": "芝1600m",
+    "surface_condition": "良",
+    "race_class": "オープン",
+    "race_number": "11",
+    "race_date": "2025/06/22",
+    "venue": "阪神競馬場"
+  },
+  "horses": [
+    {
+      "rank": "1",
+      "frame": "2",
+      "horse_number": "2",
+      "horse_name": "キープカルム",
+      "time": "1:33.0",
+      "last_3f": "33.4"
+    },
+    {
+      "rank": "2",
+      "frame": "5",
+      "horse_number": "7",
+      "horse_name": "チェルヴィニア",
+      "time": "1:33.2",
+      "last_3f": "33.9"
+    },
+    {
+      "rank": "3",
+      "frame": "7",
+      "horse_number": "12",
+      "horse_name": "コレペティトール",
+      "time": "1:33.4",
+      "last_3f": "34.2"
+    },
+    {
+      "rank": "4",
+      "frame": "4",
+      "horse_number": "5",
+      "horse_name": "ダイシンヤマト",
+      "time": "1:33.4",
+      "last_3f": "34.0"
+    },
+    {
+      "rank": "5",
+      "frame": "6",
+      "horse_number": "10",
+      "horse_name": "デビットバローズ",
+      "time": "1:33.5",
+      "last_3f": "34.4"
+    },
+    {
+      "rank": "6",
+      "frame": "6",
+      "horse_number": "9",
+      "horse_name": "マテンロウオリオン",
+      "time": "1:33.5",
+      "last_3f": "33.7"
+    },
+    {
+      "rank": "7",
+      "frame": "4",
+      "horse_number": "6",
+      "horse_name": "レーベンスティール",
+      "time": "1:33.5",
+      "last_3f": "34.1"
+    },
+    {
+      "rank": "8",
+      "frame": "8",
+      "horse_number": "13",
+      "horse_name": "ダンツエラン",
+      "time": "1:33.6",
+      "last_3f": "34.2"
+    },
+    {
+      "rank": "9",
+      "frame": "3",
+      "horse_number": "3",
+      "horse_name": "ラケマーダ",
+      "time": "1:33.6",
+      "last_3f": "34.1"
+    },
+    {
+      "rank": "10",
+      "frame": "5",
+      "horse_number": "8",
+      "horse_name": "シヴァース",
+      "time": "1:33.7",
+      "last_3f": "34.6"
+    },
+    {
+      "rank": "11",
+      "frame": "8",
+      "horse_number": "14",
+      "horse_name": "ニホンピロキーフ",
+      "time": "1:33.8",
+      "last_3f": "34.7"
+    },
+    {
+      "rank": "12",
+      "frame": "1",
+      "horse_number": "1",
+      "horse_name": "ボルザコフスキー",
+      "time": "1:33.8",
+      "last_3f": "34.0"
+    },
+    {
+      "rank": "12",
+      "frame": "3",
+      "horse_number": "4",
+      "horse_name": "ダディーズビビッド",
+      "time": "1:33.8",
+      "last_3f": "34.2"
+    },
+    {
+      "rank": "14",
+      "frame": "7",
+      "horse_number": "11",
+      "horse_name": "タシット",
+      "time": "1:34.6",
+      "last_3f": "35.5"
+    }
+  ],
+  "corner_passing_order": {
+    "corner_1": "",
+    "corner_2": "",
+    "corner_3": "14(10,11,8)(5,6)(7,13)(2,4)(3,12)1-9",
+    "corner_4": "(*14,10,11,8)12(5,6,7,13)(2,4,3)(1,9)"
+  },
+  "lap_times": {
+    "distances": [
+      "200m",
+      "400m",
+      "600m",
+      "800m",
+      "1000m",
+      "1200m",
+      "1400m",
+      "1600m"
+    ],
+    "cumulative_times": [
+      "12.5",
+      "23.4",
+      "35.1",
+      "47.2",
+      "59.1",
+      "1:10.3",
+      "1:21.4",
+      "1:33.0"
+    ],
+    "interval_times": [
+      "12.5",
+      "10.9",
+      "11.7",
+      "12.1",
+      "11.9",
+      "11.2",
+      "11.1",
+      "11.6"
+    ]
+  }
+}

@@ -8,6 +8,39 @@ from playwright.async_api import async_playwright
 from typing import Dict, List, Any
 
 
+def expand_venue_name(short_name: str) -> str:
+    """Expand short venue names to full names"""
+    venue_mapping = {
+        "浦和": "浦和競馬場",
+        "大井": "大井競馬場",
+        "川崎": "川崎競馬場",
+        "船橋": "船橋競馬場",
+        "門別": "門別競馬場",
+        "盛岡": "盛岡競馬場",
+        "水沢": "水沢競馬場",
+        "笠松": "笠松競馬場",
+        "名古屋": "名古屋競馬場",
+        "金沢": "金沢競馬場",
+        "園田": "園田競馬場",
+        "姫路": "姫路競馬場",
+        "高知": "高知競馬場",
+        "佐賀": "佐賀競馬場",
+        "荒尾": "荒尾競馬場",
+        "帯広": "帯広競馬場",
+        "東京": "東京競馬場",
+        "中山": "中山競馬場",
+        "阪神": "阪神競馬場",
+        "京都": "京都競馬場",
+        "中京": "中京競馬場",
+        "新潟": "新潟競馬場",
+        "札幌": "札幌競馬場",
+        "函館": "函館競馬場",
+        "小倉": "小倉競馬場",
+        "福島": "福島競馬場"
+    }
+    return venue_mapping.get(short_name, short_name)
+
+
 def extract_race_id(url: str) -> str:
     """Extract race_id from URL"""
     try:
@@ -105,6 +138,19 @@ async def extract_race_info(page, race_type: str) -> Dict[str, Any]:
             elif text in ['良', '稍重', '重', '不良']:
                 race_info["track_condition"] = text
         
+        # Extract track surface condition from Item04 class (NAR) or Item03 class (JRA)
+        surface_selectors = ['.Item04', '.Item03']
+        for selector in surface_selectors:
+            elements = await page.query_selector_all(selector)
+            for item in elements:
+                text = (await item.inner_text()).strip()
+                surface_match = re.search(r'馬場:([良稍重不良]+)', text)
+                if surface_match:
+                    race_info["surface_condition"] = surface_match.group(1)
+                    break
+            if race_info.get("surface_condition"):
+                break
+        
         # Extract class information from RaceData02 section
         race_data2_items = await page.query_selector_all('.RaceData02 span')
         for item in race_data2_items:
@@ -136,7 +182,8 @@ async def extract_race_info(page, race_type: str) -> Dict[str, Any]:
             # Extract venue (競馬場名) from title format: "レース名 結果・払戻 | YYYY年MM月DD日 競馬場名NR 地方競馬レース情報"
             venue_match = re.search(r'\d{4}年\d{1,2}月\d{1,2}日\s+(\S+?)\d+R', title_text)
             if venue_match:
-                race_info["venue"] = venue_match.group(1)
+                venue_name = venue_match.group(1)
+                race_info["venue"] = expand_venue_name(venue_name)
         
         # Fallback: try to extract from page title
         if not race_info.get("race_name"):
